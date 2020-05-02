@@ -1,0 +1,1256 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CLI Libraries &#8212; Crop Rows Generator CLI 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Third-party Libraries" href="code2.html" />
+    <link rel="prev" title="Welcome to Crop Rows Generator CLI’s documentation!" href="index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="code2.html" title="Third-party Libraries"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Crop Rows Generator CLI’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Crop Rows Generator CLI 1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/logocr.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">CLI Libraries</a><ul>
+<li><a class="reference internal" href="#module-main">main</a></li>
+<li><a class="reference internal" href="#module-croprows_globals">globals</a></li>
+<li><a class="reference internal" href="#module-croprows_utils">utils</a></li>
+<li><a class="reference internal" href="#module-croprows_fileutils">fileutils</a></li>
+<li><a class="reference internal" href="#module-croprows_geo">geo</a></li>
+<li><a class="reference internal" href="#module-croprows_image_preprocessing">image_preprocessing</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to Crop Rows Generator CLI’s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="code2.html"
+                        title="next chapter">Third-party Libraries</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="cli-libraries">
+<h1>CLI Libraries<a class="headerlink" href="#cli-libraries" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-main">
+<span id="main"></span><h2>main<a class="headerlink" href="#module-main" title="Permalink to this headline">¶</a></h2>
+<p>Crop Rows Main.</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">Andres Herrera</td>
+</tr>
+<tr class="field-even field"><th class="field-name">begin:</th><td class="field-body">2018-02-22</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body">2018 by Andres Herrera - Universidad del Valle</td>
+</tr>
+<tr class="field-even field"><th class="field-name">email:</th><td class="field-body"><a class="reference external" href="mailto:fabio&#46;herrera&#37;&#52;&#48;correounivalle&#46;edu&#46;co">fabio<span>&#46;</span>herrera<span>&#64;</span>correounivalle<span>&#46;</span>edu<span>&#46;</span>co</a></td>
+</tr>
+</tbody>
+</table>
+<p>This program is free software; you can redistribute it and/or modify   it under the terms of the GNU General Public License as published by  the Free Software Foundation; either version 2 of the License, or 
+(at your option) any later version.  This script initializes the plugin, making it known to QGIS.</p>
+</div></blockquote>
+<dl class="function">
+<dt id="main.cropRowsMain">
+<code class="descclassname">main.</code><code class="descname">cropRowsMain</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.cropRowsMain" title="Permalink to this definition">¶</a></dt>
+<dd><p>cropRowsMain.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>self</strong> – no input params</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-croprows_globals">
+<span id="globals"></span><h2>globals<a class="headerlink" href="#module-croprows_globals" title="Permalink to this headline">¶</a></h2>
+<p>Crop Rows Globals</p>
+<dl class="function">
+<dt id="croprows_globals.main">
+<code class="descclassname">croprows_globals.</code><code class="descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#croprows_globals.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>main. croprows_globals</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-croprows_utils">
+<span id="utils"></span><h2>utils<a class="headerlink" href="#module-croprows_utils" title="Permalink to this headline">¶</a></h2>
+<p>Crop Rows Utils</p>
+<dl class="function">
+<dt id="croprows_utils.angleBetween">
+<code class="descclassname">croprows_utils.</code><code class="descname">angleBetween</code><span class="sig-paren">(</span><em>startPoint</em>, <em>endPoint</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_utils.angleBetween" title="Permalink to this definition">¶</a></dt>
+<dd><p>angleBetween.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>startPoint</strong> – (Point) start point.</li>
+<li><strong>endPoint</strong> – (Point) end point.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns angle:</th><td class="field-body"><p class="first last">(double) angle in radians.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_utils.fileNumberIndex">
+<code class="descclassname">croprows_utils.</code><code class="descname">fileNumberIndex</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_utils.fileNumberIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>fileNumberIndex.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>x</strong> – (String) file index.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns x[0]:</th><td class="field-body">(String) split file index.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_utils.findIfClose">
+<code class="descclassname">croprows_utils.</code><code class="descname">findIfClose</code><span class="sig-paren">(</span><em>firstContour</em>, <em>secondContour</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_utils.findIfClose" title="Permalink to this definition">¶</a></dt>
+<dd><p>findIfClose. Find if contour is close</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>firstContour</strong> – (Contour) start value.</li>
+<li><strong>secondContour</strong> – (Contour) end value.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns range:</th><td class="field-body"><p class="first last">(boolean) 1: if contour is close 0: is not close</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_utils.getAzimuth">
+<code class="descclassname">croprows_utils.</code><code class="descname">getAzimuth</code><span class="sig-paren">(</span><em>startPointX</em>, <em>startPointY</em>, <em>endPointX</em>, <em>endPointY</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_utils.getAzimuth" title="Permalink to this definition">¶</a></dt>
+<dd><p>getAzimuth.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>startPointX</strong> – (double) x coord of start point.</li>
+<li><strong>startPointY</strong> – (double) y coord of start point.</li>
+<li><strong>endPointX</strong> – (double) x coord of end point.</li>
+<li><strong>endPointY</strong> – (double) y coord of end point.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns azimuthAngle:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last">(double) angle in radians.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_utils.getOpenCVVersion">
+<code class="descclassname">croprows_utils.</code><code class="descname">getOpenCVVersion</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#croprows_utils.getOpenCVVersion" title="Permalink to this definition">¶</a></dt>
+<dd><p>getOpenCVVersion.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>none</strong> – no input params.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">OpenCV version.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_utils.main">
+<code class="descclassname">croprows_utils.</code><code class="descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#croprows_utils.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>croprows utils module</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_utils.makeDirectory">
+<code class="descclassname">croprows_utils.</code><code class="descname">makeDirectory</code><span class="sig-paren">(</span><em>dirPath</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_utils.makeDirectory" title="Permalink to this definition">¶</a></dt>
+<dd><p>makeDirectory. print in console messages</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dirPath</strong> – (os.path) message to be printed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns none:</th><td class="field-body">(void)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_utils.midPoint">
+<code class="descclassname">croprows_utils.</code><code class="descname">midPoint</code><span class="sig-paren">(</span><em>startPoint</em>, <em>endPoint</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_utils.midPoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>midPoint.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>startPoint</strong> – (Point) start point.</li>
+<li><strong>endPoint</strong> – (Point) end point.</li>
+<li><strong>endPointX</strong> – (double) x coord of end point.</li>
+<li><strong>endPointY</strong> – (double) y coord of end point.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns midPoint:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last">(Point) mid point.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_utils.preProcessingContours">
+<code class="descclassname">croprows_utils.</code><code class="descname">preProcessingContours</code><span class="sig-paren">(</span><em>contoursAll</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_utils.preProcessingContours" title="Permalink to this definition">¶</a></dt>
+<dd><p>preProcessingContours. Pre processing contours</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>contoursAll</strong> – (Contour) all contours</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns smoothedContoursArray:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">(Contour) all smoothed contours preprocessed</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_utils.preProcessingFilteredContours">
+<code class="descclassname">croprows_utils.</code><code class="descname">preProcessingFilteredContours</code><span class="sig-paren">(</span><em>contoursAll</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_utils.preProcessingFilteredContours" title="Permalink to this definition">¶</a></dt>
+<dd><p>preProcessingFilteredContours. Pre processing  filtered contours</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>contoursAll</strong> – (Contour) all contours</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns contoursFiltered:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">(Contour) all contours filtered</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_utils.printLogMsg">
+<code class="descclassname">croprows_utils.</code><code class="descname">printLogMsg</code><span class="sig-paren">(</span><em>msgString</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_utils.printLogMsg" title="Permalink to this definition">¶</a></dt>
+<dd><p>printLogMsg. print in console messages</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>msgString</strong> – (String) message to be printed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns stdout:</th><td class="field-body">(String) message</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_utils.removeAdjacentsInArray">
+<code class="descclassname">croprows_utils.</code><code class="descname">removeAdjacentsInArray</code><span class="sig-paren">(</span><em>contourArray</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_utils.removeAdjacentsInArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>removeAdjacentsInArray. remove adjacents in array</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>contourArray</strong> – (Array) all contours</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns noAdjacentsArray:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">(Array) adjacents removed and with last array value</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_utils.setRange">
+<code class="descclassname">croprows_utils.</code><code class="descname">setRange</code><span class="sig-paren">(</span><em>start</em>, <em>end</em>, <em>step</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_utils.setRange" title="Permalink to this definition">¶</a></dt>
+<dd><p>setRange.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>start</strong> – (int) start value.</li>
+<li><strong>end</strong> – (int) end value.</li>
+<li><strong>step</strong> – (int) step value.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns range:</th><td class="field-body"><p class="first last">(list) list of number generated</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_utils.sortContours">
+<code class="descclassname">croprows_utils.</code><code class="descname">sortContours</code><span class="sig-paren">(</span><em>contours</em>, <em>method='left-to-right'</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_utils.sortContours" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>sortContours. Sort Contours</dt>
+<dd>See: <a class="reference external" href="https://www.pyimagesearch.com/2015/04/20/sorting-contours-using-python-and-opencv/">https://www.pyimagesearch.com/2015/04/20/sorting-contours-using-python-and-opencv/</a></dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>contours</strong> – (Contour) contours to be sorted</li>
+<li><strong>method</strong> – (Options) left-to-right , bottom-to-top , top-to-bottom</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns contours:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">(Contour)  list of sorted contours</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Returns boundingBoxes:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first last">(BBox)  list of sorted bounding boxes</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-croprows_fileutils">
+<span id="fileutils"></span><h2>fileutils<a class="headerlink" href="#module-croprows_fileutils" title="Permalink to this headline">¶</a></h2>
+<p>Crop Rows Fileutils</p>
+<dl class="class">
+<dt id="croprows_fileutils.CropRowsAnglesGenerator">
+<em class="property">class </em><code class="descclassname">croprows_fileutils.</code><code class="descname">CropRowsAnglesGenerator</code><a class="headerlink" href="#croprows_fileutils.CropRowsAnglesGenerator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="croprows_fileutils.CropRowsAnglesGenerator.angleMean">
+<code class="descname">angleMean</code><em class="property"> = 0</em><a class="headerlink" href="#croprows_fileutils.CropRowsAnglesGenerator.angleMean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="croprows_fileutils.CropRowsAnglesGenerator.angleSd">
+<code class="descname">angleSd</code><em class="property"> = 0</em><a class="headerlink" href="#croprows_fileutils.CropRowsAnglesGenerator.angleSd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="croprows_fileutils.CropRowsAnglesGenerator.anglesFoundArray">
+<code class="descname">anglesFoundArray</code><em class="property"> = 0</em><a class="headerlink" href="#croprows_fileutils.CropRowsAnglesGenerator.anglesFoundArray" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="croprows_fileutils.CropRowsAnglesGenerator.anglesGeneration">
+<code class="descname">anglesGeneration</code><span class="sig-paren">(</span><em>cfgAnglesGenerator</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_fileutils.CropRowsAnglesGenerator.anglesGeneration" title="Permalink to this definition">¶</a></dt>
+<dd><p>anglesGeneration.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cfgAnglesGenerator</strong> – (Array) angles generator config.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns angle:</th><td class="field-body">(double) angle.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="croprows_fileutils.CropRowsAnglesGenerator.getAnglesGeneratorGlobals">
+<code class="descname">getAnglesGeneratorGlobals</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#croprows_fileutils.CropRowsAnglesGenerator.getAnglesGeneratorGlobals" title="Permalink to this definition">¶</a></dt>
+<dd><p>getAnglesGeneratorGlobals.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>self</strong> – (None).</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns anglesFoundArray:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">angles found array.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Returns angleMean:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">angles mean.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns angleSd:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">angles standard derivation.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="croprows_fileutils.CropRowsTilesGenerator">
+<em class="property">class </em><code class="descclassname">croprows_fileutils.</code><code class="descname">CropRowsTilesGenerator</code><a class="headerlink" href="#croprows_fileutils.CropRowsTilesGenerator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="croprows_fileutils.CropRowsTilesGenerator.cropTileImageWorker">
+<code class="descname">cropTileImageWorker</code><span class="sig-paren">(</span><em>iCol</em>, <em>jRow</em>, <em>pixelTile</em>, <em>dirName</em>, <em>processingImageFile</em>, <em>optionForProcessing</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_fileutils.CropRowsTilesGenerator.cropTileImageWorker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Thread worker function for crop image into tiles</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="croprows_fileutils.CropRowsTilesGenerator.dirName">
+<code class="descname">dirName</code><em class="property"> = ''</em><a class="headerlink" href="#croprows_fileutils.CropRowsTilesGenerator.dirName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="croprows_fileutils.CropRowsTilesGenerator.getTilesGenerationGlobals">
+<code class="descname">getTilesGenerationGlobals</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#croprows_fileutils.CropRowsTilesGenerator.getTilesGenerationGlobals" title="Permalink to this definition">¶</a></dt>
+<dd><p>getTilesGenerationGlobals.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>self</strong> – (None).</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns dirName:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">tiles directory name.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns nCols:</th><td class="field-body">num columns.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns nRows:</th><td class="field-body">num rows.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="croprows_fileutils.CropRowsTilesGenerator.nCols">
+<code class="descname">nCols</code><em class="property"> = 0</em><a class="headerlink" href="#croprows_fileutils.CropRowsTilesGenerator.nCols" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="croprows_fileutils.CropRowsTilesGenerator.nRows">
+<code class="descname">nRows</code><em class="property"> = 0</em><a class="headerlink" href="#croprows_fileutils.CropRowsTilesGenerator.nRows" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="croprows_fileutils.CropRowsTilesGenerator.tilesGeneration">
+<code class="descname">tilesGeneration</code><span class="sig-paren">(</span><em>cfgTilesGenerator</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_fileutils.CropRowsTilesGenerator.tilesGeneration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_fileutils.croprowsFileReader">
+<code class="descclassname">croprows_fileutils.</code><code class="descname">croprowsFileReader</code><span class="sig-paren">(</span><em>xmlProjectFile</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_fileutils.croprowsFileReader" title="Permalink to this definition">¶</a></dt>
+<dd><p>croprowsFileReader.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>xmlProjectFile</strong> – (String) xmlProjectFile.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns None:</th><td class="field-body">none.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_fileutils.generateCropRowsLinesAll">
+<code class="descclassname">croprows_fileutils.</code><code class="descname">generateCropRowsLinesAll</code><span class="sig-paren">(</span><em>cfgLinesGenerator</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_fileutils.generateCropRowsLinesAll" title="Permalink to this definition">¶</a></dt>
+<dd><p>generateCropRowsLinesAll.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cfgLinesGenerator</strong> – (Array) config lines generator array.
+:returns None: None.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_fileutils.generateLinesFile">
+<code class="descclassname">croprows_fileutils.</code><code class="descname">generateLinesFile</code><span class="sig-paren">(</span><em>dirName</em>, <em>fileNameValue</em>, <em>contourFile</em>, <em>meanAngleFitElipseContours</em>, <em>pixelSizeValue</em>, <em>imageExtentsValue</em>, <em>epsgValue</em>, <em>col</em>, <em>row</em>, <em>tileSizeValue</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_fileutils.generateLinesFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>generateLinesFile.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dirName</strong> – (String) dir name.</li>
+<li><strong>fileNameValue</strong> – (String) file name.</li>
+<li><strong>contourFile</strong> – (String) contour file name.</li>
+<li><strong>meanAngleFitElipseContours</strong> – (double) mean angle from contours.</li>
+<li><strong>pixelSizeValue</strong> – (int) pixel size.</li>
+<li><strong>imageExtentsValue</strong> – (Array) image extents.</li>
+<li><strong>epsgValue</strong> – (int) epsg code from spatial reference system.</li>
+<li><strong>col</strong> – (int) column.</li>
+<li><strong>row</strong> – (int) row.</li>
+<li><strong>tileSizeValue</strong> – tile size.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns None:</th><td class="field-body"><p class="first last">None.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_fileutils.main">
+<code class="descclassname">croprows_fileutils.</code><code class="descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#croprows_fileutils.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>croprows file utils module</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_fileutils.saveResultXMLFile">
+<code class="descclassname">croprows_fileutils.</code><code class="descname">saveResultXMLFile</code><span class="sig-paren">(</span><em>resultingFiles</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_fileutils.saveResultXMLFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>saveResultXMLFile.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>resultingFiles</strong> – (Array) crop rows results.
+:returns None: (none) none.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-croprows_geo">
+<span id="geo"></span><h2>geo<a class="headerlink" href="#module-croprows_geo" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-croprows_geo.py"></span><dl class="function">
+<dt id="croprows_geo.extendAllLinesInParallel">
+<code class="descclassname">croprows_geo.</code><code class="descname">extendAllLinesInParallel</code><span class="sig-paren">(</span><em>tilesDirName</em>, <em>epsgValue</em>, <em>iCols</em>, <em>jRows</em>, <em>maskVectorFile</em>, <em>seedValue</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_geo.extendAllLinesInParallel" title="Permalink to this definition">¶</a></dt>
+<dd><p>extendAllLinesInParallel.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tilesDirName</strong> – (String) tile directory name.</li>
+<li><strong>epsgValue</strong> – (String) code for refrerence system.</li>
+<li><strong>iCols</strong> – (int) current column.</li>
+<li><strong>jRows</strong> – (int) current row.</li>
+<li><strong>maskVectorFile</strong> – (String) mask file name.</li>
+<li><strong>seedValue</strong> – (int) seed for crop rows orientation.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns none:</th><td class="field-body"><p class="first last">None.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_geo.extendAllMergedLines">
+<code class="descclassname">croprows_geo.</code><code class="descname">extendAllMergedLines</code><span class="sig-paren">(</span><em>dirPathLines</em>, <em>vectorMask</em>, <em>epsgValue</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_geo.extendAllMergedLines" title="Permalink to this definition">¶</a></dt>
+<dd><p>extendAllMergedLines.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dirPathLines</strong> – (text) path
+:param vectorMask: (text) path
+:param epsgValue: (text) epsg value</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">OpenCV version.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_geo.extendLinesGeom">
+<code class="descclassname">croprows_geo.</code><code class="descname">extendLinesGeom</code><span class="sig-paren">(</span><em>col</em>, <em>row</em>, <em>epsgValue</em>, <em>dirNameVectorResults</em>, <em>dirNameVectorObjResults</em>, <em>boundsVectorFile</em>, <em>linesVectorFile</em>, <em>maskVectorFile</em>, <em>seedValue</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_geo.extendLinesGeom" title="Permalink to this definition">¶</a></dt>
+<dd><p>extendLinesGeom.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>col</strong> – (int) current column.</li>
+<li><strong>row</strong> – (int) current row.</li>
+<li><strong>dirNameVectorResults</strong> – (String) vector dir path.</li>
+<li><strong>boundsVectorFile</strong> – (String) bounds file.</li>
+<li><strong>linesVectorFile</strong> – (String) lines file.</li>
+<li><strong>maskVectorFile</strong> – (String) mask file.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns none:</th><td class="field-body"><p class="first last">(None) nothing.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_geo.extendProcessing">
+<code class="descclassname">croprows_geo.</code><code class="descname">extendProcessing</code><span class="sig-paren">(</span><em>boxGeoDataFrame</em>, <em>linesGeoDataFrame</em>, <em>epsgValue</em>, <em>dirNameVectorObjResults</em>, <em>linesExtendedFileName</em>, <em>vectorMask</em>, <em>col</em>, <em>row</em>, <em>seedValue</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_geo.extendProcessing" title="Permalink to this definition">¶</a></dt>
+<dd><p>extendProcessing.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>boxGeoDataFrame</strong> – (Box) box</li>
+<li><strong>linesGeoDataFrame</strong> – (int) lines</li>
+<li><strong>epsgValue</strong> – (int) spatial reference system</li>
+<li><strong>dirNameVectorObjResults</strong> – (String) vector objects folder</li>
+<li><strong>linesExtendedFileName</strong> – (String) lines extended file.</li>
+<li><strong>seedValue</strong> – (int) seed for crop rows orientation.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns none:</th><td class="field-body"><p class="first last">None.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_geo.getExtrapoledLine">
+<code class="descclassname">croprows_geo.</code><code class="descname">getExtrapoledLine</code><span class="sig-paren">(</span><em>startPoint</em>, <em>endPoint</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_geo.getExtrapoledLine" title="Permalink to this definition">¶</a></dt>
+<dd><p>getExtrapoledLine. Creates a line extrapoled in startPoint-&gt;endPoint direction</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>startPoint</strong> – (Point) start point.</li>
+<li><strong>endPoint</strong> – (Point) end point.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns LineString:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last">(LineString) line.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_geo.main">
+<code class="descclassname">croprows_geo.</code><code class="descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#croprows_geo.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>croprows geo module</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_geo.mergeAllLines">
+<code class="descclassname">croprows_geo.</code><code class="descname">mergeAllLines</code><span class="sig-paren">(</span><em>dirPathLines</em>, <em>epsgValue</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_geo.mergeAllLines" title="Permalink to this definition">¶</a></dt>
+<dd><p>mergeAllLines.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dirPathLines</strong> – (String) path.
+:param epsgValue: (int) epsg code.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns none:</th><td class="field-body">None.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_geo.mergeAllPoints">
+<code class="descclassname">croprows_geo.</code><code class="descname">mergeAllPoints</code><span class="sig-paren">(</span><em>dirPathLines</em>, <em>epsgValue</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_geo.mergeAllPoints" title="Permalink to this definition">¶</a></dt>
+<dd><p>mergeAllPoints.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dirPathLines</strong> – (text) path lines directory.</li>
+<li><strong>epsgValue</strong> – (int) epsg code.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns None:</th><td class="field-body"><p class="first last">(None).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_geo.min_distance">
+<code class="descclassname">croprows_geo.</code><code class="descname">min_distance</code><span class="sig-paren">(</span><em>point</em>, <em>lines</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_geo.min_distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="croprows_geo.postProcessingLines">
+<code class="descclassname">croprows_geo.</code><code class="descname">postProcessingLines</code><span class="sig-paren">(</span><em>cfgPostProcessingLines</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_geo.postProcessingLines" title="Permalink to this definition">¶</a></dt>
+<dd><p>postProcessingLines.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cfgPostProcessingLines</strong> – (Array) lines postprocessing config array.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">none.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-croprows_image_preprocessing">
+<span id="image-preprocessing"></span><h2>image_preprocessing<a class="headerlink" href="#module-croprows_image_preprocessing" title="Permalink to this headline">¶</a></h2>
+<p>Crop Rows Image Processing</p>
+<dl class="function">
+<dt id="croprows_image_preprocessing.adjustGamma">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">adjustGamma</code><span class="sig-paren">(</span><em>inputRasterImage</em>, <em>gamma=1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.adjustGamma" title="Permalink to this definition">¶</a></dt>
+<dd><p>ajustGamma.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>inputRasterImage</strong> – (Image) input raster image.</li>
+<li><strong>gamma</strong> – (double) gamma value.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns outputRasterImage:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last">(Image) output raster image.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.autoCannyEdgeDetection">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">autoCannyEdgeDetection</code><span class="sig-paren">(</span><em>inputRasterImage</em>, <em>sigma=0.33</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.autoCannyEdgeDetection" title="Permalink to this definition">¶</a></dt>
+<dd><p>autoCannyEdgeDetection.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>inputRasterImage</strong> – (Image) image to process
+:param sigma: (double) sigma value</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns outputRasterImage:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">(Image) outputRasterImage.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.buildContours">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">buildContours</code><span class="sig-paren">(</span><em>inputRasterImage</em>, <em>seed</em>, <em>tolerance</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.buildContours" title="Permalink to this definition">¶</a></dt>
+<dd><p>buildContours.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>inputRasterImage</strong> – (Image) image.</li>
+<li><strong>seed</strong> – (int) seed.</li>
+<li><strong>tolerance</strong> – (double) tolerance.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns imgContours:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">(Array) imgContours.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Returns contoursAll:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">(Array) contoursAll.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns contoursFiltred:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">(Array) contoursFiltred.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Returns angleFitMinAreaRect:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">(double) angleFitMinAreaRect.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns meanAngleFitMinAreaRect:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">(double) meanAngleFitMinAreaRect.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Returns angleFitElipseContours:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">(double) angleFitElipseContours.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns meanAngleFitElipseContours:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last">(double) meanAngleFitElipseContours.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.calcCIVEIndex">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">calcCIVEIndex</code><span class="sig-paren">(</span><em>inputRasterImage</em>, <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.calcCIVEIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>calcCIVEIndex.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>inputRasterImage</strong> – (Image) input raster image.</li>
+<li><strong>mode</strong> – (String) mode RGB or GBR</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns outputRasterImage:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last">(Image) output raster image.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.calcExGIndex">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">calcExGIndex</code><span class="sig-paren">(</span><em>inputRasterImage</em>, <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.calcExGIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>calcExGIndex.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>inputRasterImage</strong> – (Image) input raster image.</li>
+<li><strong>mode</strong> – (String) mode RGB or GBR</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns outputRasterImage:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last">(Image) output raster image.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.calcExGlessExGIndex">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">calcExGlessExGIndex</code><span class="sig-paren">(</span><em>inputRasterImage</em>, <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.calcExGlessExGIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>calcExGlessExGIndex.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>inputRasterImage</strong> – (Image) input raster image.</li>
+<li><strong>mode</strong> – (String) mode RGB or GBR</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns outputRasterImage:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last">(Image) output raster image.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.calcExRIndex">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">calcExRIndex</code><span class="sig-paren">(</span><em>inputRasterImage</em>, <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.calcExRIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>calcExRIndex.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>inputRasterImage</strong> – (Image) input raster image.</li>
+<li><strong>mode</strong> – (String) mode RGB or GBR</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns outputRasterImage:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last">(Image) output raster image.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.calcNDIIndex">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">calcNDIIndex</code><span class="sig-paren">(</span><em>inputRasterImage</em>, <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.calcNDIIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>calcNDIIndex.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>inputRasterImage</strong> – (Image) input raster image.</li>
+<li><strong>mode</strong> – (String) mode RGB or GBR</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns outputRasterImage:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last">(Image) output raster image.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.calcNDVIIndex">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">calcNDVIIndex</code><span class="sig-paren">(</span><em>inputRasterImage</em>, <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.calcNDVIIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>calcNDVIIndex.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>inputRasterImage</strong> – (Image) input raster image.</li>
+<li><strong>mode</strong> – (String) mode RGB or GBR</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns outputRasterImage:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last">(Image) output raster image.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.contrastStretch">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">contrastStretch</code><span class="sig-paren">(</span><em>inputRasterImage</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.contrastStretch" title="Permalink to this definition">¶</a></dt>
+<dd><p>contrastStretch.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>inputRasterImage</strong> – (Image) input raster image.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns outputRasterImage:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">(Image) output raster image.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.drawContours">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">drawContours</code><span class="sig-paren">(</span><em>inputRasterImage</em>, <em>contours</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.drawContours" title="Permalink to this definition">¶</a></dt>
+<dd><p>drawContours.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>inputRasterImage</strong> – (Image) image to process.</li>
+<li><strong>contours</strong> – (Contour) contours.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns outputRasterImage:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">(Image) RasterImage.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Returns outputImageContousSmallBoxes:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">(Image) ImageContousSmallBoxes.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns cloneRasterImageForAxisInBox:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last">(Image) RasterImageForAxisInBox.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.exgThresholdOtsu">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">exgThresholdOtsu</code><span class="sig-paren">(</span><em>inputRasterImage</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.exgThresholdOtsu" title="Permalink to this definition">¶</a></dt>
+<dd><p>exgThresholdOtsu.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>inputRasterImage</strong> – (Image) input raster image.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns outputRasterImage:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">(Image) output raster image.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.histogramEqualize">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">histogramEqualize</code><span class="sig-paren">(</span><em>inputRasterImage</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.histogramEqualize" title="Permalink to this definition">¶</a></dt>
+<dd><p>histogramEqualize.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>inputRasterImage</strong> – (Image) input image</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns outputRasterImage:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">(Image) Equalized Image</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.imageGreenMask">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">imageGreenMask</code><span class="sig-paren">(</span><em>inputRasterImage</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.imageGreenMask" title="Permalink to this definition">¶</a></dt>
+<dd><p>imageGreenMask.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>inputRasterImage</strong> – (Image) image to process.
+:returns greenMaskImage: (Image) green mask image.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns bitwiseOutputImage:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">(Image) bitwise output image.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.imagePreProcessing">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">imagePreProcessing</code><span class="sig-paren">(</span><em>inputRasterImage</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.imagePreProcessing" title="Permalink to this definition">¶</a></dt>
+<dd><p>imagePreProcessing.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>inputRasterImage</strong> – (Image) input raster image.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns outputRasterImage:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">(Image) output raster image.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.imageSegmentation">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">imageSegmentation</code><span class="sig-paren">(</span><em>inputRasterImage</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.imageSegmentation" title="Permalink to this definition">¶</a></dt>
+<dd><p>imageSegmentation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>inputRasterImage</strong> – (Image) image to process.
+:returns outputRasterImage: (Image) output image.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.imageVegetationIndex">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">imageVegetationIndex</code><span class="sig-paren">(</span><em>inputRasterImage</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.imageVegetationIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>imageVegetationIndex.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>inputRasterImage</strong> – (Image) input raster image.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns outputRasterImage:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">(Image) output raster image.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.main">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>croprows image processing module</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.preProcessingPipeline">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">preProcessingPipeline</code><span class="sig-paren">(</span><em>inputRasterImage</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.preProcessingPipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>preProcessingPipeline.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>inputRasterImage</strong> – (Image) image to process</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns outputRasterImage:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">(Image) outputRasterImage.
+:returns maskRasterOut: (Image) mask_out.
+:returns vegetationIndexImage: (Image) vegetation index image.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.readRGBImageByUrl">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">readRGBImageByUrl</code><span class="sig-paren">(</span><em>inputRasterImage</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.readRGBImageByUrl" title="Permalink to this definition">¶</a></dt>
+<dd><p>readRGBImageByUrl.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>inputRasterImage</strong> – (String) input image filename</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns outputRasterImage:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">(Image) RGB Image</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="croprows_image_preprocessing.smoothingPreProcessing">
+<code class="descclassname">croprows_image_preprocessing.</code><code class="descname">smoothingPreProcessing</code><span class="sig-paren">(</span><em>inputRasterImage</em>, <em>mW</em>, <em>gW</em><span class="sig-paren">)</span><a class="headerlink" href="#croprows_image_preprocessing.smoothingPreProcessing" title="Permalink to this definition">¶</a></dt>
+<dd><p>smoothingPreProcessing.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>inputRasterImage</strong> – (Image) input image.</li>
+<li><strong>mW</strong> – (double) param mW.</li>
+<li><strong>gW</strong> – (double) param gW.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Returns medianBlurImage:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">(Image) median blur Image.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Returns gausianBlurImage:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first last">(Image) gausian blur Image.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="code2.html" title="Third-party Libraries"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Crop Rows Generator CLI’s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Crop Rows Generator CLI 1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Andres Herrera.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.4.
+    </div>
+  </body>
+</html>

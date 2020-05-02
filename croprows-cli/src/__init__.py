@@ -1,0 +1,9 @@
+__package__ = 'croprows-cli'
+__author__ = "Andres Herrera"
+__copyright__ = "Copyright 2018, Crop Rows Generator CLI"
+__credits__ = ["Andres Herrera", "Maria Patricia Uribe", "Ivan Mauricio Cabezas"]
+__license__ = "GPL"
+__version__ = "1.0"
+__maintainer__ = "Andres Herrera"
+__email__ = "fabio.herrera@correounivalle.edu.co"
+__status__ = "Development"
