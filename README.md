@@ -17,7 +17,7 @@ The guide also assumes you have a working **Docker**  installation and a basic u
 - Crop Rows Generator (CRG) v1.0 website:
 http://54.186.237.120/croprowsgenerator/
 - Crop Rows Generator (CRG) GitHub page:
-https://github.com/AndresHerrera/croprows_generator_pa
+https://github.com/AndresHerrera/croprows_generator_pa_v2
 - Crop Rows Generator (CRG) Youtube Playlist:
 https://www.youtube.com/playlist?list=PL5Uf6W3KZ2JBKwHgeifJJUgeGkOZviSIK
 
