@@ -78,7 +78,7 @@ or just run
 
 ## Install QGIS plugin
 
-[croprows-qgis-plugin](croprows-qgis-plugin/README.md)
+- [croprows-qgis-plugin](croprows-qgis-plugin/README.md)
 
 ## Developers Documentation
 
