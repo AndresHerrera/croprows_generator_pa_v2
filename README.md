@@ -76,7 +76,7 @@ or just run
 
 ![OSGeo4W](screenshot6.png)
 
-## Install QGIS plugin
+## QGIS Plugin Documentation
 
 - [croprows-qgis-plugin](croprows-qgis-plugin/README.md)
 
