@@ -70,6 +70,16 @@ or just run
 
 ![Running CRG](screenshot5.png)
 
+## Download and Install OSGeo4W
+
+- [OSGeo4W Web installer](http://download.osgeo.org/osgeo4w/osgeo4w-setup-x86_64.exe)
+
+![OSGeo4W](screenshot6.png)
+
+## Install QGIS plugin
+
+[croprows-qgis-plugin](croprows-qgis-plugin/README.md)
+
 ## Developers Documentation
 
 - [Crop Rows Generator - CLI](http://54.186.237.120/croprowsgenerator/crg_cli/html/index.html)
