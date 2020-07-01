@@ -15,6 +15,7 @@
 
 ## Installation for QGIS 2.x version
 1. Download file **PACropRowsv1_QGIS2_x.zip** available on the Crop Rows Generator repository.
+[PACropRowsv1_QGIS2_x.zip](PACropRowsv1_QGIS2_x.zip)
 2. Extract **PACropRowsv1_QGIS2_x.zip** into the **.qgis2/python/plugins** folder located in home directory.
 3. Start QGIS Desktop 2.x.
 4. Activate Crop Rows Generator Plugin in QGIS Desktop Plugin Manager. To open the Plugin Manager, click on the menu item Plugins **-> Manage and Install Plugins .**
@@ -25,6 +26,7 @@
 
 ## Installation for QGIS 3.x version
 1. Download file **PACropRowsv1_QGIS3_x.zip** available on the Crop Rows Generator repository.
+[PACropRowsv1_QGIS3_x.zip](PACropRowsv1_QGIS3_x.zip)
 2. Extract **PACropRowsv1_QGIS3_x.zip** into the **profiles/default/python/plugins** folder located in home directory.
 3. Start QGIS Desktop 3.x.
 4. Activate Crop Rows Generator Plugin in QGIS Desktop Plugin Manager. To open the Plugin Manager, click on the menu item Plugins **-> Manage and Install Plugins .**
