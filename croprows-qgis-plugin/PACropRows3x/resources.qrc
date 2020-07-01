@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="/plugins/PACropRows">
+    <file>icon.png</file>
+	<file>img/uvlogo.png</file>
+	<file>img/pat1.png</file>
+	<file>img/pat2.png</file>
+	<file>img/pat3.png</file>
+	<file>img/pat4.png</file>
+	<file>img/mmvlab2.jpg</file>
+	<file>img/mmvlab.png</file>
+  </qresource>
+</RCC>

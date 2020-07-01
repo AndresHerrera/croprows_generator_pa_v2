@@ -1,0 +1,53 @@
+# This file contains metadata for your plugin. Since 
+# version 2.0 of QGIS this is the proper way to supply 
+# information about a plugin. The old method of 
+# embedding metadata in __init__.py will 
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin
+# Mandatory items:
+
+[general]
+name=Crop Rows Generator
+qgisMinimumVersion=2.0
+description=This plugin generates crop rows lines from drone aerial images
+version=1.0
+author=Andres Herrera - Universidad del Valle
+email=fabio.herrera@correounivalle.edu.co
+
+description=This QGIS plugin generates sugarcane crop rows (vector lines) from drone imagery.
+
+about=This QGIS Plugin is part of a Master thesis of:
+    AN AUTOMATIC CROP ROWS GENERATOR USING AERIAL HIGH-RESOLUTION IMAGES FOR PRECISION AGRICULTURE
+    In partial fulfillment of the requirements for the degree of:
+    Magister en Ingenier&iacute;a con &Eacute;nfasis en Ingenier&iacute;a de Sistemas y Computaci&oacute;n
+    Researcher:
+    Fabio Andres Herrera - fabio.herrera@correounivalle.edu.co
+    Supervisors:
+    Maria Patricia Trujillo, Ph.D
+    Ivan Mauricio Cabezas, Ph.D
+    Multimedia and Computer Vision Research Group (MMV-LAB)
+    Universidad del Valle / Santiago de Cali
+    Colombia - 2018
+
+tracker=https://github.com/AndresHerrera/croprows_generator_pa/issues
+repository=https://github.com/AndresHerrera/croprows_generator_pa
+# End of mandatory metadata
+
+# Recommended items:
+
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=remote sensing,drone,uav,agriculture,ap
+
+homepage=https://github.com/AndresHerrera/croprows_generator_pa/issues
+category=Plugins
+icon=logocr.png
+# experimental flag
+experimental=True
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+

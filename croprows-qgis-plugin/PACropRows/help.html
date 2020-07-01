@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Help - Crop Rows Plugin</title>
+
+    <style>
+        body{font-family: helvetica, arial, sans-serif;}
+        h2{ color: #04978D; }
+        box-inline-block{display: inline-block;width: 100px;height: 100px;margin: 1em;}
+        div {background-color: lightgrey;padding: 10px;}
+        table,th,td{border:1px solid black;border-collapse:collapse;}
+        .zui-table { border: solid 1px #DDEEEE; border-collapse: collapse;border-spacing: 0;font: normal 14px Arial, sans-serif;}
+        .zui-table thead th {background-color: #DDEFEF;border: solid 1px #DDEEEE;color: #336B6B;padding: 12px;text-align: left;text-shadow: 1px 1px 1px #fff;}
+        .zui-table tbody td {border: solid 1px #DDEEEE;color: #333;padding: 10px;text-shadow: 1px 1px 1px #fff;}
+        ol {counter-reset: item;}ol li {display: block;}ol li:before {content: counter(item) ". "; counter-increment: item; font-weight: bold;}
+        ul {list-style: none;}
+    </style>
+
+</head>
+<body>
+    <h2>CROP ROWS GENERATOR (CRG) - QGIS PLUGIN</h2>
+    <h3>Version: 1.0</h3>
+    <hr>
+    <h3>Steps to generate sugarcane Crop Rows </h3>
+    The following contains a steps to generate geospatial vector files of sugarcane crop rows with <b>CRG - QGIS Plugin</b>.
+    <br>
+    <table style="width:600px;" class="zui-table">
+
+        <tr>
+            <td><h1>1</h1></td> 
+            <td>
+                <h3>Spatial Data (TAB) </h3>
+                On this tab you must select the input spatial data to be processed.<br><br>
+                <img src="tutorial/help1.png" width="520px">
+                <br>
+                <ul>
+                        <li><b>1. </b>Select the <b>Raster</b> Image File previously loaded on QGIS TOC.<br><br></li>
+                        <li><b>2. </b>Select <b>Vector</b> Mask File previously loaded on QGIS TOC.<br><br></li>
+                        <li><b>3. </b>Select <b>Seed</b> value according to crop rows orientation.<br><br></li>
+                </ul>
+
+                        <table style="width: 100%;" class="zui-table">
+                            <tbody>
+                                <tr>
+                                  <td><b>Horizontal pattern</b></td>
+                                  <td><b>Vertical pattern</b></td> 
+                                </tr>
+                                <tr>
+                                  <td><img src="tutorial/pat1.png"  width="100px"> </td>
+                                  <td><img src="tutorial/pat2.png"  width="100px"> </td> 
+                                </tr>
+                                <tr>
+                                        <td><b>Counterclockwise pattern</b></td>
+                                        <td><b>Clockwise pattern</b></td> 
+                                      </tr>
+                                      <tr>
+                                        <td><img src="tutorial/pat3.png"  width="100px"> </td>
+                                        <td><img src="tutorial/pat4.png"  width="100px"> </td>
+                                      </tr>
+                            </tbody>
+                        </table>
+                        <br>
+
+                        <ul>
+                            <li><b>4. </b>Click on <b>Run All Task</b> button to perform the process.</li>
+                        </ul>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td><h1>2</h1></td>
+            <td>
+                <h3>Confirm Dialog (Mosaic Clip by Mask) </h3>
+                <img src="tutorial/help2.png"  width="450px">
+                <br>
+                <ul>
+                        <li>
+                            <b>1. </b>Once you Click on <b>Run All Task</b> button in the popup dialog you must be click on <b>(yes/si)</b> button. 
+                        </li>
+                </ul> 
+               <b>Note:</b> Mosaic clipping process can take a few minutes, even several hours dependes of the size of the Raster Mosaic and the complex shape of the vector mask file.
+            </td>
+        </tr>
+        <tr>
+            <td><h1>3</h1></td>
+            <td>
+                <h3>Confirm Dialog (Processing Task) </h3>
+                <img src="tutorial/help3.png" width="450px">
+                <br>
+                <ul>
+                        <li><b>1. </b> Click on <b>(yes/si)</b> button to perform the task. 
+                                </li>
+                </ul> 
+               <b>Note:</b> Crop Rows processing task can take a few minutes, even several hours dependes of the size of the Raster 
+               Mosaic and crop rows to detect. Also processing time may be affected by processing server where <b>CROP ROWS-CLI</b> is running.
+        
+            </td>
+
+        </tr>
+        <tr>
+            <td><h1>4</h1></td>
+            <td>
+                <h3>Processing Status (TAB) </h3>
+                <br>
+                This tab will show the process of Crop Rows generation.<br><br>
+                <img src="tutorial/help4.png" width="500px">
+                <br>
+                <ul>
+                        <li>
+                            <b>1.</b> CROP ROWS-CLI standard output. <br><br>
+                        </li>
+                        <li>
+                            <b>2. </b> Status bar for Crop Rows generation process.
+                        </li>
+                </ul>
+
+                <b>Note:</b> Few minutes, even hours. This process can be take to complete.
+         
+            </td>
+        </tr>
+        <tr>
+            <td><h1>5</h1></td>
+            <td>
+                <h3>Process finissed (Message Dialog)</h3>
+                <img src="tutorial/help5.png">
+                <br>
+                <br>
+                <b>Note:</b> Once the process is complete, the resulting data will be loaded into the QGIS TOC.
+                
+            </td>
+                
+
+        </tr>
+        <tr>
+            <td><h1>6</h1></td>
+            <td>
+                <h3>Crop Rows Result</h3>
+                <img src="tutorial/help6.png" width="500px">
+                
+                <br>
+                <ul>
+                        <li>
+                            <b>1.</b> A new vector file named <b>croprows_lines</b> is loaded on QGIS TOC. <br><br>
+                        </li>
+                        <li>
+                            <b>2.</b> A new vector file named <b>croprows_lines_buffer</b> is loaded on QGIS TOC. <br><br>
+                        </li>
+                        <li>
+                            <b>3.</b> A new vector file named <b>croprows_tiles</b> is loaded on QGIS TOC. <br><br>
+                        </li>
+                </ul>
+
+
+                <h3>Vector File (<i>croprows_lines</i>) (Spatial data)</h3>
+
+                <img src="tutorial/help7.png" width="500px">
+                
+                <br>
+                <ul>
+                        <li>
+                            <b>1.</b> Generated <b>croprows_lines</b> has the same reference system as the input data. <br><br>
+                        </li>
+                        <li>
+                            <b>2.</b> Each of the detected lines (Crop Rows) is an independent entity. <br><br>
+                        </li>
+                </ul>
+
+                <h3>Vector File  (<i>croprows_lines</i>) (Alphanumeric data)</h3>
+
+                <img src="tutorial/help8.png" width="500px">
+
+                <br>
+                <ul>
+                        <li>
+                            <b>1.</b> Generated <b>croprows_lines</b> has related alphanumeric data. <br><br>
+                        </li>
+                        <li>
+                            <b>2.</b> Each one of the tuples is a detected lines (Crop Rows). <br><br>
+                            <b>idg:</b> unique line identifier.
+                            <br>
+                            <b>crlen:</b> length of detected line (meters).
+                        </li>
+                </ul>
+
+                <h3>Vector File  (<i>croprows_lines_buffer</i>) (Spatial data)</h3>
+
+                <img src="tutorial/help10.png" width="500px">
+
+                <br>
+                <ul>
+                        <li>
+                            <b>1.</b> Generated <b>croprows_lines_buffer</b> has the same reference system as the input data. <br><br>
+                        </li>
+                        <li>
+                            <b>2.</b> Each of the polygon is an independent entity. <br><br>
+                        </li>
+                        <li>
+                            <b>3.</b> Corresponds to an influence area of 0.60 cm for each detected crop row. <br><br>
+                        </li>
+                </ul>
+
+                <h3>Vector File  (<i>croprows_tiles</i>) (Spatial data)</h3>
+
+                <img src="tutorial/help11.png" width="500px">
+
+                <br>
+                <ul>
+                        <li>
+                            <b>1.</b> Generated <b>croprows_tiles</b> has the same reference system as the input data. <br><br>
+                        </li>
+                        <li>
+                            <b>2.</b> Each one of the tile is an independent entity.  <br><br>
+                        </li>
+                        <li>
+                            <b>3.</b> Each vector tile corresponds usually a processed tile of 20 m x 20 m. <br><br>
+                        </li>
+                </ul>
+
+
+                <h3>Results in Export Folder </h3>
+
+                <li>
+                    <b>1.</b> A generated <b>croprows_wgs84.kml</b> file with a assigned geographic reference system (<b>WGS84/EPSG:4326</b>) is located. File supported by Google Earth software.<br><br>
+                </li>
+                <li>
+                    <b>2.</b> A generated <b>croprows_wgs84.shp</b> file with a assigned geographic reference system (<b>WGS84/EPSG:4326</b>) is located. File supported by most of the auto-guidance computer panels. <br><br>
+                </li>
+
+                
+                
+
+                <img src="tutorial/kmlexport.png" width="500px">
+
+
+            </td>
+  
+        </tr>
+  
+      </table>
+
+    
+    <hr>
+    <h3>CRG Configuration Parameters</h3>
+
+    <br>
+    <table style="width:600px;" class="zui-table">
+
+        <tr>
+            <td><h1>1</h1></td> 
+            <td>
+                    <img src="tutorial/help9.png" width="500px">
+                    <br>
+                <ul>
+                        <li>
+                            <b>1.</b> Where <b>CROP ROWS-CLI</b> processing server is running (<b>2767</b> port by default). <br><br>
+                        </li>
+                        <li>
+                            <b>2.</b> Where <b>OSGeo4W</b> binaries are installed on host machine. 
+                            <br>(​GDAL and OGR are mandatory requeriments) <br>
+                                See: <a href="https://trac.osgeo.org/osgeo4w/">https://trac.osgeo.org/osgeo4w/</a> for extra information.
+                            <br><br>
+                        </li>
+                        <li>
+                                <b>3.</b>Path to shared folder between host and processing server.<br><br>
+                        </li>
+                        <li>
+                                <b>4.</b>Click on <b>Save Current Configuration</b> button if changes are made. <br><br>
+                        </li>
+
+                        <li>
+                                <b>5.</b>No data value for Raster Mosaic clipper processing (<b>-999</b> value by default). <br><br>
+                        </li>
+
+                        <li>
+                                <b>6.</b>Load results into QGIS data frame and TOC when processes are finished (checked by default).<br><br>
+                        </li>
+                </ul>
+
+                    
+                    
+                
+            </td>
+        </tr>
+    </table>    
+    
+    
+    <hr>
+    <p>
+        <b>CRG-QGIS PLUGIN</b> is part of: <b>AN AUTOMATIC CROP ROWS GENERATOR USING AERIAL HIGH-RESOLUTION IMAGES FOR PRECISION AGRICULTURE</b>
+        Master's Degree project.
+        <br><b>Multimedia and Computer Vision Research Group (MMV-LAB)</b>
+        <br>Universidad del Valle / Santiago de Cali
+        <br>Colombia - 2018
+    </p>
+    <hr>
+</body>
+</html>

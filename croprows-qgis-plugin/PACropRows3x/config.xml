@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<croprows>
+    <config>
+        <processing_core_path>http://localhost:2767/</processing_core_path>
+        <osgeo_path>C:/OSGeo4W64/bin/</osgeo_path>
+        <temporal_path>C:/temporal/croprows/</temporal_path>
+        <clip_load>true</clip_load>
+        <load_results>true</load_results>
+        <alwaysclip>true</alwaysclip>
+        <output_file>C:/temporal/croprows/croprows_lines.shp</output_file>
+    </config>
+</croprows>

@@ -1,0 +1,14 @@
+============================
+API Libraries
+============================
+
+croprows-api
+====================================================
+
+.. automodule:: croprows-api
+    :members:
+    :undoc-members:
+    :inherited-members:
+    :show-inheritance:
+    :private-members:
+   	:special-members:
