@@ -42,8 +42,6 @@ git clone https://github.com/AndresHerrera/croprows_generator_pa_v2.git
 
 cd croprows_generator_pa_v2
 
-mkdir droneimages
-
 ### Build a "crg_v2" Docker image 
 
 docker build -t crg_v2:latest .
