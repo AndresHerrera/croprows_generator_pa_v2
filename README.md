@@ -44,15 +44,15 @@ cd croprows_generator_pa_v2
 
 ### Build a "crg_v2" Docker image 
 
-docker build -t crg_v2:latest .
+sudo docker build -t crg_v2:latest .
 
 ## Running crop rows generator api
 
-docker run --rm -p 2767:2767 --env FLASK_APP=croprows-api --env FLASK_ENV=development --env CRG_MODE=serial --name crg_v2 -v $(pwd)/droneimages:/app/orthomosaics crg_v2:latest
+sudo docker run --rm -p 2767:2767 --env FLASK_APP=croprows-api --env FLASK_ENV=development --env CRG_MODE=serial --name crg_v2 -v $(pwd)/droneimages:/app/orthomosaics crg_v2:latest
 
 or just run 
 
-./run_croprows-api.sh
+sudo ./run_croprows-api.sh
 
 ![Running CRG](screenshot3.png)
 
