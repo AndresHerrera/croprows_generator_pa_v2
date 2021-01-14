@@ -643,7 +643,7 @@ class PACropRows:
             self.dlg.statusBarProcessing2.setValue(10)
             strNewFile='croprows/'+str(self.dlg.xmlCoreFile.text())
             self.dlg.statusBarProcessing2.setValue(50)
-            urlp = urlparse.urljoin(self.dlg.inputProcessingApiURL.text(),strNewFile)
+            urlp = urllib.parse.urljoin(self.dlg.inputProcessingApiURL.text(),strNewFile)
             self.dlg.webViewProcessingStatus.load( QUrl(urlp))
             self.dlg.statusBarProcessing2.setValue(55)
             QgsMessageLog.logMessage('Crop Rows Generation processing from API Running')
