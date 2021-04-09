@@ -15,7 +15,7 @@ The guide also assumes you have a working **Docker**  installation and a basic u
 ## Resources
 
 - Crop Rows Generator (CRG) v1.0 website:
-http://34.222.36.64/croprowsgenerator/
+http://34.220.130.53/croprowsgenerator/
 - Crop Rows Generator (CRG) GitHub page:
 https://github.com/AndresHerrera/croprows_generator_pa_v2
 - Crop Rows Generator (CRG) Youtube Playlist:
@@ -80,9 +80,9 @@ sudo ./run_croprows-api.sh
 
 ## Developers Documentation
 
-- [Crop Rows Generator - CLI](http://34.222.36.64/croprowsgenerator/crg_cli/html/index.html)
+- [Crop Rows Generator - CLI](http://34.220.130.53/croprowsgenerator/crg_cli/html/index.html)
 
-- [Crop Rows Generator - QGIS API](http://34.222.36.64/croprowsgenerator/crg_plugin/html/index.html)
+- [Crop Rows Generator - QGIS API](http://34.220.130.53/croprowsgenerator/crg_plugin/html/index.html)
 
 ## Performance Requirements
 
