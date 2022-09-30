@@ -3,7 +3,7 @@ numpy==1.16.6
 scipy==1.2.3
 Fiona==1.8.13.post1
 Pillow==3.2.0
-joblib==0.14.1
+joblib==1.2.0
 pandas==0.24.2
 geopandas==0.6.3
 geojson==2.5.0
